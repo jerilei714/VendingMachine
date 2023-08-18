@@ -1100,7 +1100,9 @@ public class VendingMachineGUI extends JFrame
 
     displayProducts(speVendingMachine);
 
-    // Display the available products 
+    // Display the available products
+
+        //ask for the money input
 
     JPanel moneyPanel = new JPanel();
     moneyPanel.setLayout(new GridLayout(9, 2));
