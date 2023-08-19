@@ -12,7 +12,7 @@ public abstract class VendingMachine {
     // Initializes the money denominations with 10 of each denomination
     // Initializes the transaction with the number of item slots
 
-    public VendingMachine(int numSlots) {
+    protected VendingMachine(int numSlots) {
         this.itemSlots = new ItemSlot[numSlots];        // item slots in the vending machine
         this.moneyDenominations = new MoneyDenominations(10, 10, 10, 10, 10, 10, 10, 10, 10);
         this.transaction = new Transaction(numSlots);   // transaction of the vending machine
@@ -23,7 +23,7 @@ public abstract class VendingMachine {
         }
     }
 
-    public VendingMachine(int numSlots, int numProductSlots) {
+    protected VendingMachine(int numSlots, int numProductSlots) {
         this.itemSlots = new ItemSlot[numSlots];        // item slots in the vending machine
         this.moneyDenominations = new MoneyDenominations(10, 10, 10, 10, 10, 10, 10, 10, 10);
         this.transaction = new Transaction(numSlots);   // transaction of the vending machine
