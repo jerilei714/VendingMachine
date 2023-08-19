@@ -562,6 +562,7 @@ public class VendingSim {
                     System.out.println("===== Exiting the program... =====");
                     System.out.println("== Thank you for using our vending machine! ==");
                     System.exit(0);
+                    break;
                 default:
                     System.out.println("ERR: == Invalid choice! ==");
             }
